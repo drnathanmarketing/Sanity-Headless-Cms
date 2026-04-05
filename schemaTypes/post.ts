@@ -71,6 +71,22 @@ export default defineType({
       ]
     }),
     defineField({
+      name: 'categories',
+      title: 'Categories',
+      type: 'array',
+      group: 'content',
+      of: [{ type: 'reference', to: { type: 'category' } }],
+      description: 'High-level grouping for your blog posts (e.g., Marketing, Consultancy).',
+    }),
+    defineField({
+      name: 'tags',
+      title: 'Tags',
+      type: 'array',
+      group: 'content',
+      of: [{ type: 'reference', to: { type: 'tag' } }],
+      description: 'Granular topics used for filtering (e.g., SEO tips, Case Study).',
+    }),
+    defineField({
       name: 'body',
       title: 'Article Body',
       type: 'array',
