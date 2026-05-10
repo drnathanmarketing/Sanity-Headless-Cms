@@ -43,7 +43,7 @@ export default defineType({
       title: 'Department',
       type: 'string',
       group: 'profile',
-      description: 'e.g. Marketing, Operations, Consultancy, Creative',
+      description: 'e.g. Marketing, Account, Consultancy, Creative',
       options: {
         list: [...DEPARTMENT_LIST],
       },
